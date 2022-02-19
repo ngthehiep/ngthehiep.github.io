@@ -1,0 +1,145 @@
+/* reset */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Barlow';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+    outline: none;
+}
+input{
+    line-height: normal;
+}
+label,
+button{
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+/* end reset */
+
+:root {
+    --white-color: #ffffff;
+    --text-color: #232323;
+    --gray-color: #7d7d7d;
+    --primary-color: #fcb222;
+    --top-header-height: 38px;
+    --header-height: 138px;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    outline: none;
+    border: none;
+    min-width: 230px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+    height: 60px;
+}
+.btn:hover {
+    transform: scale(0.95);
+}
+.btn__text {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+.btn__primary {
+    background: var(--primary-color);
+}
+.btn__second {
+    background: var(--text-color);
+}
+
+.section {
+    padding: 120px 0;
+}
+.section__heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--gray-color);
+    padding: 20px 0;
+    position: relative;
+}
+.section__heading:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 2px;
+    width: 30px;
+    background-color: var(--primary-color);
+}
+.section__heading--left:before {
+    left: 0;
+}
+.section__heading--center:before {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+.section__heading--center {
+    text-align: center;
+}
+.section__title {
+    display: block;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.section__title--white {
+    color: var(--white-color);
+}
+.section__title--center {
+    text-align: center;
+}
+
+
+.slide-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+}
+.slide-control span {
+    width: 15px;
+    height: 15px;
+    background-color: var(--gray-color);
+    cursor: pointer;
+}
+.slide-control > span ~ span {
+    margin-left: 10px;
+} 
+.slide-control span.active {
+    background-color: var(--text-color);
+}
+.slide-control span.active.slide-control--white {
+    background-color: var(--white-color);
+}

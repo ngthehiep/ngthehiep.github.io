@@ -1,0 +1,164 @@
+@media screen and (max-width: 89.9375em), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__content {
+      padding-top: 12rem;
+    }
+  }
+
+/* Mobile and Tablet < 1023px */
+@media (max-width: 63.9375em) {
+    .booking {
+        flex-direction: column;
+    }
+    .booking__img {
+        width: 100%;
+    }
+    .booking__form {
+        width: auto;
+        padding: 2rem 2rem 4rem 2rem;
+    }
+    .contact__content {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contact__info {
+        width: 100%;
+    }
+    .contact__info {
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 5rem;
+    }
+    .contact__form {
+        width: auto;
+    }
+    .contact__form input,
+    .contact__form textarea {
+        width: -webkit-fill-available;
+    }
+}
+
+/* Mobile < 739px */
+@media (max-width: 46.1875em) {
+    .menu,
+    .header__img {
+        display: none;
+    }
+    .header__menu-close,
+    .header__collapse {
+        display: block;
+    }
+    
+    /* menu-mobile */
+    .menu-mobile {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30rem;
+        background-color: var(--white);
+        display: block;
+
+        transform: translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s, opacity 0.3s;
+        z-index: 6;
+    }
+    .menu-mobile__list {
+        margin-top: 5rem;
+        list-style: none;
+    }
+    .menu-mobile__item {
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.03);
+    }
+    .menu-mobile__item:last-child {
+        border: unset;
+    }
+    .menu-mobile__link {
+        padding: 1.5rem 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        color: var(--text-color);
+        text-align: center;
+    }
+    
+    .menu-check-input:checked ~ .menu-mobile {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .header__content {
+        padding-top: 7rem;
+    }
+    .header__content-title {
+        font-size: 4rem;
+    }
+    .header__content-desc {
+        text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.5);
+
+    }
+    .header__content-cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .btn__play-video {
+        margin: 2.5rem 0 0 0;
+    }
+
+    .about__inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    /* .about__content {
+        max-width: 72%;
+    } */
+    .heading__title {
+        font-size: 3.6rem;
+    }
+
+    .about__item {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .about__item-img {
+        height: 100%;
+    }
+    .popular__item {
+        min-width: 100%;
+        margin-bottom: 2.5rem;  
+    }
+
+    .team__item {
+        width: 100%;
+        margin-bottom: 11rem;
+    }
+    .team__info {
+        transform: translateY(-25%);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.04);
+    }
+    .team__social {
+        opacity: 1;
+        visibility: visible;
+    }
+    .booking {
+        margin-top: 14rem;
+    }
+    .contact__item:nth-of-type(2) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Tablet > 740px and < 1023px */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .about__item {
+        width: 49.6%;
+        margin-bottom: 0.6rem;
+    }
+    .popular__img  {
+        height: auto;
+    }
+}

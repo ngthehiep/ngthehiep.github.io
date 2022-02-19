@@ -1,0 +1,38 @@
+:root {
+    --text-color: #263a41;
+    --primary-color: #ff817e;
+    --secondary-color: #30383b;
+    --primary-fonts: 'Roboto', sans-serif;
+    --secondary-fonts: 'Rufina', serif;
+    --gray-light: #888;
+    --gray-dark: #555555;
+    --bg-block: #fff9f8;
+    --white: #fff;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: var(--primary-fonts);
+    color: var(--text-color);
+    background: var(--white);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 192rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    max-width: 114rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}

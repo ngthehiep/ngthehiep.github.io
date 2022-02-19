@@ -1,0 +1,287 @@
+/* solutions < 1239px */
+@media (max-width: 77.4375em) {
+    .solutions__container {
+        flex-direction: column;
+        height: auto;
+    }
+    .solutions__content {
+        width: 100%;
+        padding: 0;
+    }
+    .solutions__certification {
+        justify-content: space-around;
+    }
+    .solutions__desc {
+        padding: 0px 0 40px 0;
+    }
+    .solutions__img {
+        -webkit-user-select: none;
+        margin-top: 100px;
+        width: 65%;
+        padding-left: 0;
+    }
+    .about__tab-pane-img {
+        width: 450px;
+        height: 425px;
+    }
+}
+
+/* Mobile & Tablet < 1023px */
+@media screen and (max-width: 63.9375em) {
+    .header-nav__mobile {
+        display: block;
+    }
+    .header-nav__list {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        right: -330px;
+        bottom: 0;
+        top: 0;
+        width: 320px;
+        background-color: var(--white-color);
+        padding-top: 60px;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0 ,0.2);
+        transition: right 0.4s ease;
+        z-index: 10;
+    }
+    .header-nav__list.active {
+        right: 0;
+    }
+    .header-nav__item {
+        padding: 12px 0;
+    }
+    .header-nav__row {
+        justify-content: space-between;
+    }
+    .solution__img-bot {
+        bottom: 60px;
+    }
+    .solution__img-top {
+        left: -25px;
+    }
+    .solutions__phone {
+        margin-top: 50px;
+    }
+    .projects__item-content {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 0 20px 20px;
+    }
+    .about__desc {
+        margin-bottom: 30px;
+    }
+    .about-contractor__item:nth-child(3) {
+        display: none;
+    }
+    .about__tab-pane {
+        flex-direction: column;
+    }
+    .about__tab-pane-img {
+        width: 100%;
+        height: 370px;
+        margin-right: 0;
+        margin-bottom: 50px;
+        align-self: center;
+    }
+    .about__tab-pane-title {
+        margin-bottom: 40px;
+    }
+    .about__tab-pane-list {
+        margin-top: 40px;
+    }
+    .contractor__professional:nth-child(3) {
+        display: none;
+    }
+    .contractor__professional-control {
+        display: flex;
+    }
+    .contractor__professional {
+        margin-bottom: 100px;
+    }
+    .contraction__video-title {
+        font-size: 5rem;
+        padding: 0;
+    }
+    .contractor__bgr-quality {
+        padding: 50px 0;
+        height: auto;
+    }
+    .contractor__quality-content {
+        flex-direction: column;
+    }
+    .news__slide-control {
+        display: flex;
+    }
+    .news__item-wrap:nth-child(3) {
+        display: none;
+    }
+    .news__item-content-title {
+        margin-bottom: 30px;
+    }
+    .donors__list {
+        overflow-x: scroll;
+        padding-bottom: 15px;
+    }
+    .donors__link {
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .donors__list::-webkit-scrollbar {
+        height: 4px;
+    }
+    .donors__list::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0 ,0.2);
+    }
+    .footer__items:nth-child(1),
+    .footer__items:nth-child(2) {
+        margin-bottom: 50px;
+    }
+    .footer__inp {
+        margin: 30px 0px;
+    }
+
+    .sidebar {
+        margin-top: 50px;
+    }
+}
+/* 740px < Tablet < 1023px */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .header-nav__cart,
+    .header-nav__phone,
+    .header-nav__search {
+        margin-left: 20px;
+    }
+    .header-nav__phone {
+        padding: 15px 20px;
+    }
+    .search__box {
+        width: 70%;
+    }
+    .banner__content-title {
+        font-size: 6rem;
+    }
+    .construction__item:nth-child(3) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projects__items {
+        height: 262px;
+    }
+    .contractor__quality-btn {
+        margin-top: 30px;
+        align-self: flex-end;
+    }
+   
+    
+}
+/* Mobile < 739px */
+@media screen and (max-width: 46.1875em) {
+    .header-top {
+        display: none;
+    }
+    :root {
+        --header-height: 110px;
+    }
+    .header-nav__cart,
+    .header-nav__phone,
+    .header-nav__search {
+        margin-left: 16px;
+    }
+    .header-nav__phone {
+        padding:15px;
+    }
+    .search__box {
+        width: 90%;
+    }
+    .banner__content {
+        width: auto;
+    }
+    .banner__content-title {
+        font-size: 5rem;
+    }
+    .banner__content-item {
+        font-size: 1.4rem;
+    }
+    .banner__btn-slide {
+        display: none;
+    }
+    .banner__content-list {
+        margin: 10px 0;
+    }
+    .btn__text {
+        padding: 20px 50px;
+    }
+    .solutions__img {
+        width: 90%;
+    }
+    .solutions__certification {
+        flex-direction: column;
+        align-items: center;
+    }
+    .solutions__certification-box:first-child {
+        margin-bottom: 30px;
+    }
+    .solution__phone-numb p {
+        display: none;
+    }
+    .projects__items:nth-child(2),
+    .projects__items:nth-child(3),
+    .projects__items:nth-child(4) {
+        display: none;
+    }
+    .projects__item-content {
+        width: 100%;
+    }
+    .about-contractor__item:nth-child(2) {
+        display: none;
+    }
+    .contractor__professional:nth-child(2) {
+        display: none;
+    }
+    .contractor__quality-combine {
+        flex-direction: column;
+    }
+    .contractor__quality-content-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .contractor__quality-content-title {
+        text-align: center;
+    }
+    .contractor__quality-btn {
+        margin-top: 50px;
+        align-self: center;
+    }
+    .news__item-wrap:nth-child(2) {
+        display: none;
+    }
+    .news__item-img {
+        height: 370px;
+    }
+    .footer__item-title {
+        margin-bottom: 30px;
+    }
+    .footer__links-link {
+        padding: 12px 0px;
+    }
+    .footer__links-link::before {
+        bottom: 0;
+    }
+    .footer__contact-item {
+        padding: 20px 0px;
+    }
+    .footer__contact-item:not(:last-child):before {
+        bottom: 0;
+    }
+    .footer__items:last-child {
+        margin-top: 30px;
+    }
+
+    .news__banner-title {
+        font-size: 40px;
+    }
+}

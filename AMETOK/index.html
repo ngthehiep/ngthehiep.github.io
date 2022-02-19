@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMETOK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="main grid">
+        <!-- begin Header -->
+        <header class="header grid">
+            <nav class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l-6 m-6 flex-align-center">
+                            <ul class="header__social-list">
+                                <li class="header__social-item">
+                                    <a href="#" class="header__social-link"><i class='bx bxl-twitter'></i></a>
+                                </li>
+                                <li class="header__social-item">
+                                    <a href="#" class="header__social-link"><i class='bx bxl-facebook-square'></i></a>
+                                </li>
+                                <li class="header__social-item">
+                                    <a href="#" class="header__social-link"><i class='bx bxl-pinterest-alt' ></i></a>
+                                </li>
+                                <li class="header__social-item">
+                                    <a href="#" class="header__social-link"><i class='bx bxl-instagram' ></i></a>
+                                </li>
+                            </ul>
+                            <div class="header__quote">Welcome to Construction Company.<a href="#"> Get Free Quote</a></div>
+                        </div>
+                        <div class="col l-6 m-6 header-top__right flex-align-center">
+                            <div class="header__email flex-align-center">
+                                <div class="header__email-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <p class="header__email-text">needhelp@company.com
+                                </p>
+                            </div>
+                            <div class="header__time flex-align-center">
+                                <div class="header__time-icon">
+                                    <i class='bx bxs-time-five'></i>
+                                </div>
+                                <p class="header__time-text">Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="header-nav flex-align-center">
+                <div class="container">
+                    <div class="row header-nav__row">
+                        <a href="#" class="header__logo col l-2 m-2">
+                            <img src="./assets/image/logo.png" alt="logo" class="header__logo-img">
+                        </a>
+                        <ul class="header-nav__list flex-align-center col l-6">
+                            <div class="header-nav__mobile-close">
+                                <i class='header-nav__mobile-close-icon bx bx-x'></i>
+                            </div>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link active">home</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">pages</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">services</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">projects</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="./news.html" class="header-nav__link">news</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">contact</a>
+                            </li>
+                        </ul>
+                        <div class="header-nav__left col l-4 m-4 flex-align-center">
+                            <div class="header-nav__mobile">
+                                <i class='bx bx-menu-alt-right header-nav__mobile-btn'></i>
+                            </div>
+                            <div class="header-nav__search">
+                                <div class="header-nav__search-icon">
+                                    <i class='bx bx-search'></i>
+                                </div>
+                            </div>
+                            <div class="header-nav__cart">
+                                <div class="header-nav__cart-icon">
+                                    <i class='bx bx-cart-alt' ></i>
+                                </div>
+                            </div>
+                            <a href="tel:92 666 888 0000" title="92 666 888 0000" class="header-nav__phone flex-align-center">
+                                <div class="header-nav__phone-icon">
+                                    <i class='bx bx-phone-call' ></i>
+                                </div>
+                                <div class="header-nav__phone-number">
+                                    <p>Call Anytime </p>
+                                    <span>92 666 888 0000</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__overlay">
+                    <div class="overlay"></div>
+                    <div class="search__box">
+                        <input type="text" placeholder="search..." class="input-search">
+                        <div class="search__box-icon"><i class='bx bx-search'></i></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end Header -->
+
+        <!-- begin Banner slide -->
+        <div class="banner grid">
+            <div style="background-image: url(./assets/image/slide_home2.jpg);" class="banner__bgr">
+                <div class="container banner__container">
+                    <div class="banner__content">
+                        <h1 class="banner__content-title">
+                            Providing <strong>Quality</strong> Building Solutions
+                        </h1>
+                        <ul class="banner__content-list">
+                            <li class="banner__content-item">
+                                <i class='bx bx-right-arrow-alt'></i>
+                                Engineering techniques & implementation process 
+                            </li>
+                            <li class="banner__content-item">
+                                <i class='bx bx-right-arrow-alt'></i>
+                                We're full service construction company
+                            </li>
+                            <li class="banner__content-item">
+                                <i class='bx bx-right-arrow-alt'></i>
+                                Offering complete integrated package 
+                            </li>
+                        </ul>
+                        <button class="banner__btn btn btn__primary">
+                            <span class="btn__text">
+                                Discover More
+                            </span>
+                        </button>
+                    </div>
+                    <div class="banner__btn-slide">
+                        <div class="banner__btn-slide-icon active">
+                            <i class='bx bx-left-arrow-alt'></i>
+                        </div>
+                        <div class="banner__btn-slide-icon">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Banner slide -->
+
+        <!-- begin Section -->
+        <!-- Construction -->
+        <section class="construction grid">
+            <div class="container">
+                <div class="construction__list row">
+                    <div class="construction__item col l-4 m-6 s-12">
+                        <img src="./assets/image/construction_1.jpg" alt="" class="construction__item-img">
+                        <div class="construction__item-content">
+                            <div class="construction__item-icon">
+                                <img src="./assets/image/construction_icon_1.png" alt="">
+                            </div>
+                            <h2 class="construction__item-title">
+                                Industry Construction
+                            </h2>
+                        </div>
+
+                        <div class="construction__desc">
+                            <div class="construction__desc-content">
+                                <h2 class="construction__desc-title">
+                                    Industry Construction
+                                </h2>
+                                <p class="construction__desc-desc">
+                                    There are many variations of passages of Lorem Ipsum but the ma
+                                </p>
+                            </div>
+                            <div class="construction__desc-btn">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="construction__item col l-4 m-6 s-12">
+                        <img src="./assets/image/construction_2.jpg" alt="" class="construction__item-img">
+                        <div class="construction__item-content">
+                            <div class="construction__item-icon">
+                                <img src="./assets/image/construction_icon_2.png" alt="">
+                            </div>
+                            <h2 class="construction__item-title">
+                                Mechanical Engineering
+                            </h2>
+                        </div>
+
+                        <div class="construction__desc">
+                            <div class="construction__desc-content">
+                                <h2 class="construction__desc-title">
+                                    Mechanical Construction
+                                </h2>
+                                <p class="construction__desc-desc">
+                                    There are many variations of passages of Lorem Ipsum but the ma
+                                </p>
+                            </div>
+                            <div class="construction__desc-btn">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="construction__item col l-4 m-6 s-12">
+                        <img src="./assets/image/construction_3.jpg" alt="" class="construction__item-img">
+                        <div class="construction__item-content">
+                            <div class="construction__item-icon">
+                                <img src="./assets/image/construction_icon_1.png" alt="">
+                            </div>
+                            <h2 class="construction__item-title">
+                                Bridge Construction
+                            </h2>
+                        </div>
+
+                        <div class="construction__desc">
+                            <div class="construction__desc-content">
+                                <h2 class="construction__desc-title">
+                                    Bridge Construction
+                                </h2>
+                                <p class="construction__desc-desc">
+                                    There are many variations of passages of Lorem Ipsum but the ma
+                                </p>
+                            </div>
+                            <div class="construction__desc-btn">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions section grid">
+            <div style="background-image: url(./assets/image/bg_intro_company.png);" class="solution__bgr"></div>
+            <div class="solutions__container container flex-align-center">
+                <div class="solutions__content">
+                    <h3 class="section__heading section__heading--left">welcome to company</h3>
+                    <h2 class="section__title">
+                        Your Partner for All  Construction Solutions
+                    </h2>
+                    <div class="solutions__desc">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized.
+                    </div>
+                    <div class="solutions__exp">
+                        we have 35+ years of experience work with global industries
+                    </div>
+                    <div class="solutions__certification">
+                        <div class="solutions__certification-box">
+                            <i class="fas fa-check"></i>
+                            <span>Reliable and Proven</span>
+                        </div>
+                        <div class="solutions__certification-box">
+                            <i class="fas fa-check"></i>
+                            <span>Experts Contractors</span>
+                        </div>
+                    </div>
+                    <div class="solutions__percent">
+                        <div class="percent">
+                            <div class="solutions__percent-title">
+                                <h3>Industrial Work</h3>
+                                <span>91%</span>
+                            </div>
+                            <div class="solutions__percent-line"></div>
+                        </div>
+                        <div class="percent">
+                            <div class="solutions__percent-title">
+                                <h3>Factory Business</h3>
+                                <span>78%</span>
+                            </div>
+                            <div class="solutions__percent-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solutions__img">
+                    <img src="./assets/image/intro_company_1.jpg" alt="" class="solution__img-center">
+                    <img src="./assets/image/intro_company_2.jpg" alt="" class="solution__img-top">
+                    <img src="./assets/image/intro_company_3.jpg" alt="" class="solution__img-bot">
+                    <div class="solutions__phone">
+                        <div class="solutions__phone-icon">
+                            <i class='bx bx-phone-call' ></i>
+                        </div>
+                        <div class="solution__phone-numb">
+                            <p>Have any question? Give us a</p>
+                            <a href="tel:92 666 888 0000">
+                                Call: <span>92 666 888 0000</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects grid section">
+            <div class="container">
+                <h3 class="section__heading section__heading--center">
+                    our closed projects list
+                </h3>
+                <h2 class="section__title section__title--center">
+                    recent industrial projects 
+                </h2>
+                <div class="projects__list row">
+                    <div class="projects__items col l-6 m-6 s-12">
+                        <div class="projects__item">
+                            <img src="./assets/image/project_1.jpg" alt="" class="projects__item-img">
+                            <a href="#" class="projects__item-content">
+                                <div class="projects__item-content-btn">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </div>
+                                <div class="projects__item-content-name">
+                                    <p>Industrial  /  Factory</p>
+                                    <h3>Bridge Construction</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects__items col l-6 m-6">
+                        <div class="projects__item">
+                            <img src="./assets/image/project_2.jpg" alt="" class="projects__item-img">
+                            <a href="#" class="projects__item-content">
+                                <div class="projects__item-content-btn">
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </div>
+                                <div class="projects__item-content-name">
+                                    <p>Industrial  /  Factory</p>
+                                    <h3>Bridge Construction</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects__items col l-6 m-6">
+                        <div class="projects__item">
+                            <img src="./assets/image/project_3.jpg" alt="" class="projects__item-img">
+                        </div>
+                    </div>
+                    <div class="projects__items col l-6 m-6">
+                        <div class="projects__item">
+                            <img src="./assets/image/project_4.jpg" alt="" class="projects__item-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-control">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <div class="about grid">
+            <div style="background-image: url(./assets/image/about_bgr-top.jpg);" class="about__bgr-top">
+            </div>
+            <div style="background-image: url(./assets/image/about_bgr-bot.jpg);" class="about__bgr-bot"></div>
+            <div class="container">
+                <div class="about__heading">
+                    <div class="row">
+                        <div class="col l-6 m-12 s-12">
+                            <h3 class="section__heading section__heading--left">
+                                client testimonials
+                            </h3>
+                            <h2 class="section__title section__title--white">
+                                what they're saying about company
+                            </h2>
+                        </div>
+                        <div class="flex-align-center col l-6 m-12 s-12">
+                            <p class="about__desc">
+                                Lorem ipsum is simply free text available. Arena eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-contractor__list no-gutter row">
+                    <div class="about-contractor__item col l-4 m-6 s-12">
+                        <div class="about-contractor__item-avt">
+                            <img src="./assets/image/about_avt-1.jpg" alt="">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="about-contractor__item-content">
+                            <p class="about-contractor__item-desc">
+                                I was very impresed by the company service lore ipsum is simply free text used by copy typing. Neque simply free text porro est dolorem ipsum quia.
+                            </p>
+                            <div class="about-contractor__item-name">
+                                <h3>Mike Hardson</h3>
+                                <span>Contractor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-contractor__item col l-4 m-6 s-0">
+                        <div class="about-contractor__item-avt">
+                            <img src="./assets/image/about_avt-2.jpg" alt="">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="about-contractor__item-content">
+                            <p class="about-contractor__item-desc">
+                                I was very impresed by the company service lore ipsum is simply free text used by copy typing. Neque simply free text porro est dolorem ipsum quia.
+                            </p>
+                            <div class="about-contractor__item-name">
+                                <h3>Sarah Albert</h3>
+                                <span>Contractor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-contractor__item col l-4">
+                        <div class="about-contractor__item-avt">
+                            <img src="./assets/image/about_avt-3.jpg" alt="">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="about-contractor__item-content">
+                            <p class="about-contractor__item-desc">
+                                I was very impresed by the company service lore ipsum is simply free text used by copy typing. Neque simply free text porro est dolorem ipsum quia.
+                            </p>
+                            <div class="about-contractor__item-name">
+                                <h3>Goerge Bush</h3>
+                                <span>Contractor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-control">
+                    <span class="active slide-control--white"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="about__statistical-list row no-gutter">
+                    <div class="about__statistical-item col l-3 m-3 s-6">
+                        <div class="about__statistical-item-img">
+                            <img src="./assets/image/about_statistical-1.png" alt="">
+                        </div>
+                        <h3>6420</h3>
+                        <p>Industry Solutions</p>
+                    </div>
+                    <div class="about__statistical-item col l-3 m-3 s-6">
+                        <div class="about__statistical-item-img">
+                            <img src="./assets/image/about_statistical-2.png" alt="">
+                        </div>
+                        <h3>6420</h3>
+                        <p>Industry Solutions</p>
+                    </div>
+                    <div class="about__statistical-item col l-3 m-3 s-6">
+                        <div class="about__statistical-item-img">
+                            <img src="./assets/image/about_statistical-3.png" alt="">
+                        </div>
+                        <h3>6420</h3>
+                        <p>Industry Solutions</p>
+                    </div>
+                    <div class="about__statistical-item col l-3 m-3 s-6">
+                        <div class="about__statistical-item-img">
+                            <img src="./assets/image/about_statistical-4.png" alt="">
+                        </div>
+                        <h3>6420</h3>
+                        <p>Industry Solutions</p>
+                    </div>
+                </div>
+                <div class="about__tabs">
+                    <div class="row no-gutter">
+                        <div class="about__tab-item active col l-4 m-4 s-12">
+                            <h3>Unparalleled Experience</h3>
+                        </div>
+                        <div class="about__tab-item col l-4 m-4 s-12">
+                            <h3>Quality Construction</h3>
+                        </div>
+                        <div class="about__tab-item col l-4 m-4 s-12">
+                            <h3>Industry Solutions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="container">
+                <div class="about__tab-content">
+                    <div class="about__tab-pane active">
+                        <div class="about__tab-pane-img">
+                            <img src="./assets/image/about_tab-img-1.jpg" alt="">
+                        </div>
+                        <div class="about__tab-pane-content">
+                            <h2 class="about__tab-pane-title">
+                                There are many variations of passages of lorem ipsum available.
+                            </h2>
+                            <p class="about__tab-pane-desc">
+                                The majority have suffered alteration in some form injected humour or randomised words which don't look even believable. If you are going to use a passage of you need to be sure there isn't anything.
+                            </p>
+                            <ul class="about__tab-pane-list">
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>We have undertaken almost 8800 projects in 60 countries.</p>
+                                </li>
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>It’s not just what we build that makes us the right partner.</p>
+                                </li>
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>Being a partner for all of your construction needs.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__tab-pane">
+                        <div class="about__tab-pane-img">
+                            <img src="./assets/image/about_tab-img-2.jpg" alt="">
+                        </div>
+                        <div class="about__tab-pane-content">
+                            <h2 class="about__tab-pane-title">
+                                There are many variations of passages of lorem ipsum available.
+                            </h2>
+                            <p class="about__tab-pane-desc">
+                                The majority have suffered alteration in some form injected humour or randomised words which don't look even believable. If you are going to use a passage of you need to be sure there isn't anything.
+                            </p>
+                            <ul class="about__tab-pane-list">
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>We have undertaken almost 8800 projects in 60 countries.</p>
+                                </li>
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>It’s not just what we build that makes us the right partner.</p>
+                                </li>
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>Being a partner for all of your construction needs.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__tab-pane">
+                        <div class="about__tab-pane-img">
+                            <img src="./assets/image/about_tab-img-3.jpg" alt="">
+                        </div>
+                        <div class="about__tab-pane-content">
+                            <h2 class="about__tab-pane-title">
+                                There are many variations of passages of lorem ipsum available.
+                            </h2>
+                            <p class="about__tab-pane-desc">
+                                The majority have suffered alteration in some form injected humour or randomised words which don't look even believable. If you are going to use a passage of you need to be sure there isn't anything.
+                            </p>
+                            <ul class="about__tab-pane-list">
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>We have undertaken almost 8800 projects in 60 countries.</p>
+                                </li>
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>It’s not just what we build that makes us the right partner.</p>
+                                </li>
+                                <li class="about__tab-pane-item">
+                                    <i class='bx bx-check'></i>
+                                    <p>Being a partner for all of your construction needs.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contractor section grid">
+            <div class="container">
+                <h3 class="section__heading section__heading--center">
+                    Meet the expert team
+                </h3>
+                <h2 class="section__title section__title--center">
+                    Professional Contractors
+                </h2>
+                <div class="row">
+                    <div class="contractor__professional col l-4 m-6 s-12">
+                        <div class="contractor__professional-img">
+                            <img src="./assets/image/contractor_img-1.jpg" alt="">
+                        </div>
+                        <div class="contractor__professional-info">
+                            <h3 class="contractor__professional-name">
+                                Robert Smith
+                            </h3>
+                            <span class="contractor__professional-duty">
+                                Contractor
+                            </span>
+                            <ul class="contractor__professional-socials">
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-facebook-square'></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-pinterest-alt' ></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-instagram' ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contractor__professional col l-4 m-6">
+                        <div class="contractor__professional-img">
+                            <img src="./assets/image/contractor_img-2.jpg" alt="">
+                        </div>
+                        <div class="contractor__professional-info">
+                            <h3 class="contractor__professional-name">
+                                Robert Smith
+                            </h3>
+                            <span class="contractor__professional-duty">
+                                Contractor
+                            </span>
+                            <ul class="contractor__professional-socials">
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-facebook-square'></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-pinterest-alt' ></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-instagram' ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contractor__professional col l-4">
+                        <div class="contractor__professional-img">
+                            <img src="./assets/image/contractor_img-3.jpg" alt="">
+                        </div>
+                        <div class="contractor__professional-info">
+                            <h3 class="contractor__professional-name">
+                                Robert Smith
+                            </h3>
+                            <span class="contractor__professional-duty">
+                                Contractor
+                            </span>
+                            <ul class="contractor__professional-socials">
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-facebook-square'></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-pinterest-alt' ></i>
+                                    </a>
+                                </li>
+                                <li class="contractor__socials-item">
+                                    <a href="" class="contractor__socials-link">
+                                        <i class='bx bxl-instagram' ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contractor__professional-control slide-control">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div style="background-image: url(./assets/image/contractor_bgr-video.jpg);" class="contractor__bgr-video">
+                <div class="contractor__bgr-video-container container">
+                    <div class="contraction__video-play">
+                        <i class='bx bx-play'></i>
+                    </div>
+                    <h2 class="contraction__video-title">
+                        Great Experience For Building Construction & Industry
+                    </h2>
+                </div>
+            </div>
+            <div style="background-image: url(./assets/image/contractor_bgr-quality.jpg);" class="contractor__bgr-quality">
+                <div class="container">
+                    <div class="contractor__quality-content">
+                        <div class="contractor__quality-combine">
+                            <div class="contractor__quality-content-icon">
+                                <img src="./assets/image/contractor_icon-quality.png" alt="">
+                            </div>
+                            <h2 class="contractor__quality-content-title">
+                                Quality, Affordable, Manufacturing and Industrial Services
+                            </h2>
+                        </div>
+                        <button class="contractor__quality-btn btn btn__second">
+                            <span class="btn__text">Discover more</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Articles -->
+        <section class="news grid">
+            <div class="container">
+                <h3 class="section__heading section__heading--center">
+                    from the blog
+                </h3>
+                <a href="./news.html" class="section__title section__title--center">
+                    news & articles
+                </a>
+                <div class="row">
+                    <div class="col l-4 m-6 s-12">
+                        <div class="news__item">
+                            <div class="news__item-img">
+                                <img src="./assets/image/news_img-1.jpg" alt="">
+                            </div>
+                            <div class="news__item-content">
+                                <div class="news__item-content-info">
+                                    by Admin  /  2 Comments
+                                </div>
+                                <h2 class="news__item-content-title">
+                                    How to Build your Mechanical Tools Industry
+                                </h2>
+                                <p class="news__item-content-desc">
+                                    Lorem ipsum is simply free text used by copytyping refreshing.
+                                </p>
+                            </div>
+                            <div class="news__date">
+                                07 Oct
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 news__item-wrap">
+                        <div class="news__item">
+                            <div class="news__item-img">
+                                <img src="./assets/image/news_img-2.jpg" alt="">
+                            </div>
+                            <div class="news__item-content">
+                                <div class="news__item-content-info">
+                                    by Admin  /  2 Comments
+                                </div>
+                                <h2 class="news__item-content-title">
+                                    How to Build your Mechanical Tools Industry
+                                </h2>
+                                <p class="news__item-content-desc">
+                                    Lorem ipsum is simply free text used by copytyping refreshing.
+                                </p>
+                            </div>
+                            <div class="news__date">
+                                07 Oct
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 news__item-wrap">
+                        <div class="news__item">
+                            <div class="news__item-img">
+                                <img src="./assets/image/news_img-3.jpg" alt="">
+                            </div>
+                            <div class="news__item-content">
+                                <div class="news__item-content-info">
+                                    by Admin  /  2 Comments
+                                </div>
+                                <h2 class="news__item-content-title">
+                                    How to Build your Mechanical Tools Industry
+                                </h2>
+                                <p class="news__item-content-desc">
+                                    Lorem ipsum is simply free text used by copytyping refreshing.
+                                </p>
+                            </div>
+                            <div class="news__date">
+                                07 Oct
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="news__slide-control slide-control">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+        <!-- Donors  -->
+        <div class="donors section grid">
+            <div class="container">
+                <ul class="donors__list">
+                    <li class="donors__item">
+                       <a href="#" class="donors__link">
+                           <img src="./assets/image/Donors_img.png" alt="">
+                       </a> 
+                    </li>
+                    <li class="donors__item">
+                        <a href="#" class="donors__link">
+                            <img src="./assets/image/Donors_img.png" alt="">
+                        </a> 
+                     </li>
+                     <li class="donors__item">
+                        <a href="#" class="donors__link">
+                            <img src="./assets/image/Donors_img.png" alt="">
+                        </a> 
+                     </li>
+                     <li class="donors__item">
+                        <a href="#" class="donors__link">
+                            <img src="./assets/image/Donors_img.png" alt="">
+                        </a> 
+                     </li>
+                     <li class="donors__item">
+                        <a href="#" class="donors__link">
+                            <img src="./assets/image/Donors_img.png" alt="">
+                        </a> 
+                     </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end Section -->
+
+        <!-- begin Footer -->
+        <footer class="footer section">
+            <div style="background-image: url(./assets/image/footer_bgr.jpg);" class="footer__bgr"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer__items col l-3 m-6 s-12">
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">
+                                About
+                            </h2>
+                            <p class="footer__item-desc">
+                                There are many variations of simple lorem ipsum available for not, but the majority have suffered alteration.
+                            </p>
+                            <button class="footer__about-btn btn btn__primary">
+                                <span class="btn__text">
+                                    Request a Quote
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__items col l-2 m-6 s-12">
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">
+                                Links
+                            </h2>
+                            <ul class="footer__links-list">
+                                <li class="footer__links-item">
+                                    <a href="#" class="footer__links-link">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="footer__links-item">
+                                    <a href="#" class="footer__links-link">
+                                        Meet Our Team
+                                    </a>
+                                </li>
+                                <li class="footer__links-item">
+                                    <a href="#" class="footer__links-link">
+                                        News & Media
+                                    </a>
+                                </li>
+                                <li class="footer__links-item">
+                                    <a href="#" class="footer__links-link">
+                                        Our Projects
+                                    </a>
+                                </li>
+                                <li class="footer__links-item">
+                                    <a href="#" class="footer__links-link">
+                                        Contacts
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__items col l-4 m-6 s-12">
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">
+                                Contact
+                            </h2>
+                            <ul class="footer__contact-list">
+                                <li class="footer__contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>88 Broklyn Golden Street, New York</p>
+                                </li>
+                                <li class="footer__contact-item">
+                                    <i class='bx bxs-time-five'></i>
+                                    <p>Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
+                                </li>
+                                <li class="footer__contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <p>needhelp@company.com</p>
+                                </li>
+                                <li class="footer__contact-item">
+                                    <i class="fas fa-phone-volume"></i>
+                                    <p>92 666 888 0000</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__items col l-3 m-6 s-12">
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">
+                                Newsletter
+                            </h2>
+                            <div class="footer__news-content">
+                                <p class="footer__item-desc">
+                                    There are many variations of simple lorem ipsum available for not.
+                                </p>
+                                <div class="footer__inp">
+                                    <input type="text" placeholder="Email Address" class="footer__inp-mail">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <ul class="footer__socials">
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-link">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-link">
+                                            <i class="fab fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="" class="footer__social-link">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="sub-footer grid">
+            <div class="container sub-footer__container">
+                <div class="sub-footer__license">
+                    © All Copyright 2020 by <a href="#">Company.com</a>
+                </div>
+                <span>
+                    Terms & Conditions   /   Privacy Policy   /   Sitemap
+                </span>
+            </div>
+        </footer>
+        <!-- end Footer -->
+    </div>
+</body>
+<!-- js -->
+<script src="./assets/main.js"></script>
+</html>
