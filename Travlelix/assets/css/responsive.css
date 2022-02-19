@@ -1,0 +1,197 @@
+/* Mobile & Tablet */
+@media (max-width: 63.9375em) {
+    .main__bar-list {
+        display: none;
+    }
+    .search {
+        flex: 1;
+    }
+    .mobile-bar__btn {
+        display: block;
+    }
+    .mobile-menu.active {
+        opacity: 0.95;
+        visibility: visible;
+    }
+    .home__silde-btn {
+        margin-top: 50px;
+    }
+    .intro__col:not(:first-child) {
+        margin-top: 60px;
+    }
+    .search_forms {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .search_tabs {
+        position: unset;
+        left: unset;
+        bottom: unset;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        transform: unset;
+    }
+    .search_tab-item {
+        width: 100%;
+        justify-content: flex-start;
+        flex: unset;
+        height: 62px;
+        padding: 10px 15px;
+    }
+    .search_tabs .search_tab-item:first-child {
+        border-radius: unset;
+    }
+    .search_tabs .search_tab-item:last-child {
+        border-radius: unset;
+    }
+    .search_panel {
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    .search_form {
+        flex-direction: column;
+    }
+    .search_form__item {
+        margin-top: 20px;
+        width: 100% !important;
+    }
+    .search_form__btn {
+        margin-top: 50px;
+        align-self: flex-start;
+    }
+    .btn__slide-right,
+    .btn__slide-left{
+        display: none;
+    }
+    .offer__content {
+        margin-top: 40px;
+    }
+    .offer__content-rating {
+        font-size: 1.2rem;
+    }
+    .footer__item {
+        margin-top: 50px;
+    }
+    .footer-bar__list {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .footer-bar__item:not(:first-child) {
+        margin-left: 0;
+    }
+    .footer-bar__item:not(:first-child) {
+        margin-top: 10px;
+    }
+    .footer-author .dp-flex-end {
+        justify-content: flex-start;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .home__slide-content-inner h1:first-child {
+        font-size: 7.2rem;
+    }
+    .home__slide-content-inner h1:nth-child(2) {
+        font-size: 6rem;
+        margin-top: -24px;
+    }
+    .intro__item {
+        height: 810px;
+    }
+    .package__content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .offer__bg {
+        height: 708px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .top__bar {
+        display: none;
+    }
+    .header.scrolled .main__nav_col {
+        height: 60px;
+    }
+    .header.scrolled .main__bar {
+        height: 60px;
+    }
+    .main__nav_col {
+        height: 60px;
+    }
+    .main__bar {
+        height: calc(var(--height-main-bar) - 83px);
+    }
+    .main__logo-img {
+        width: 16px;
+        margin-bottom: 6px;
+    }
+    .main__logo-name {
+        font-size: 1.6rem;
+    }
+    .mobile-btn__close {
+        top: 20px;
+        right: 30px;
+    }
+    .mobile-menu__link {
+        font-size: 2.4rem;
+    }
+
+    .home__slide-content-inner h1:first-child {
+        font-size: 4.8rem;
+    }
+    .home__slide-content-inner h1:nth-child(2) {
+        font-size: 4.3rem;
+        margin-top: -18px;
+    }
+    .intro__item {
+        height: calc((100vw - 30px) / 0.85);
+    }
+    .section__title {
+        font-size: 2.4rem;
+    }
+    .package__title {
+        font-size: 2.4rem;
+    }
+    .offers .section__title {
+        font-size: 2.1rem;
+    }
+    .section__desc {
+        font-size: 1.6rem;
+        letter-spacing: unset;
+    }
+    .intro__item-title {
+        font-size: 3.6rem;
+    }
+    .intro__rating {
+        font-size: 1.6rem;
+    }
+    .package__content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .package-wrap {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .offer__bg {
+        height: calc((100vw - 30px) / 0.974);
+    }
+    .contact__input:first-child {
+        flex-direction: column;
+    }
+    .contact__input-name,
+    .contact__input-mail {
+        width: 100%;
+    }
+    .footer__item-space {
+        padding-top: 40px;
+    }
+}

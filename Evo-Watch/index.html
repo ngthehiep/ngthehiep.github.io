@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo Watch</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+        <!-- Begin: HEADER -->
+        <div class="grid container">
+            <!-- header-up -->
+            <header class="header">
+                <div class="header__left col lg-5 md-4 sm-4">
+                    <span class="header__left-title hide-on-mobile-tablet">
+                        Hotline Đặt Hàng: 
+                        <a href="tel: 0123456789" class="header__left-number">0123456789</a>
+                    </span>
+
+                    <label class="header__nav-bars hide-on-pc" for="header__navbar-check">
+                        <i class="header__nav-bars-icon fas fa-bars"></i>
+                    </label>
+                </div>
+
+                <a href="./index.html" class="col lg-2 md-4 sm-4 header__logo-link">
+                    <img src="./assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <ul class="header__right-list col lg-5 md-4 sm-4">
+                    <li class="header__right-item header__right-account hide-on-mobile-tablet">
+                        <a href="#" class="header__right-link">
+                            Tài khoản
+                        </a>
+                        <!-- account after -->
+                        <ul class="header__account-list">
+                            <li class="header__account-item">
+                                <a href="" class="header__account-link">đăng nhập</a>
+                            </li>
+                            <li class="header__account-item">
+                                <a href="" class="header__account-link">đăng ký</a>
+                            </li>
+                        </ul>
+                        <!-- end: account after -->
+                    </li>
+                    <li class="header__right-item header__right-cart" >
+                        <a href="#" class="header__right-link hide-on-mobile-tablet">
+                            Giỏ hàng <i class="header__right-icon-cart fas fa-cart-arrow-down"></i>
+                            <div class="header__cart-notice">0</div>
+                        </a>
+                        <a href="#" class="header__right-link hide-on-pc">
+                            <i class="header__right-icon-cart fas fa-cart-arrow-down"></i>
+                            <div class="header__cart-notice">0</div>
+                        </a>
+                        <span class="header__no-cart">
+                            Không có sản phẩm nào trong giỏ hàng.
+                        </span>
+                    </li>
+                    <li class="header__right-item">
+                        <label for="header__check-input" class="header__right-link">
+                            <i class="header__search-icon fas fa-search"></i>
+                        </label>
+                    </li>
+                </ul>
+                <input class="header__search-check" hidden type="checkbox" id="header__check-input">
+                <label for="header__check-input" class="search__overlay"></label>
+                <div class="header__search-box">
+                    <div class="header__search-width">
+                        <input class="header__search-width-input" type="text" placeholder="Bạn cần gì hôm nay?">
+                        <i class="header__search-width-icon fas fa-search"></i>
+                    </div>
+                    <label for="header__check-input" class="header__search-close">
+                        <i class="header__search-close-icon fas fa-times"></i>
+                    </label>
+                </div>
+            </header>
+
+            
+            <!-- header-down nav -->
+            <div class="col lg-12">
+                <input type="checkbox" id="header__navbar-check" hidden class="header__navbar-input">
+                <label for="header__navbar-check" class="nav-overlay"></label>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link header__nav-link--active">trang chủ</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item-drop header__nav-introduce">
+                        <a href="#" class="header__nav-link">
+                            giới thiệu 
+                        </a>
+                        <i class="header__nav-link-icon fas fa-chevron-down"></i>
+                        <ul class="drop-links__list">
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Chính sách đổi hàng</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">FAQ</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Chính sách vận chuyển</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Hệ thống cửa hàng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item header__nav-man header__nav-item-drop">
+                        <a href="#" class="header__nav-link">
+                            nam 
+                        </a>
+                        <i class="header__nav-link-icon fas fa-chevron-down"></i>
+                        <ul class="drop-links__list">
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Đồng hồ KASHMIR</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Đồng hồ WEIMAR</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Đồng hồ COLOSSEUM</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item drop-link header__nav-women header__nav-item-drop">
+                        <a href="#" class="header__nav-link">
+                            nữ 
+                        </a>
+                        <i class="header__nav-link-icon fas fa-chevron-down"></i>             
+                        <ul class="drop-links__list">
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Bán chạy nhất</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Đồng hồ MELISSANI</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Đồng hồ MORAINE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item drop-link header__nav-accessories header__nav-item-drop">
+                        <a href="#" class="header__nav-link">
+                            phụ kiện 
+                        </a>
+                        <i class="header__nav-link-icon fas fa-chevron-down"></i>
+                            <ul class="drop-links__list">
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Dây đồng hồ</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Kính râm</a>
+                            </li>
+                            <li class="drop-links__item">
+                                <a href="#" class="drop-links__link">Kính mắt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item header__nav-item-drop">
+                        <a href="#" class="header__nav-link">
+                            sản phẩm 
+                        </a>
+                        <i class="header__nav-link-icon fas fa-chevron-down"></i>
+                        <div class="header__drop-menu">
+                            <ul class="header__drop-menu-list">
+                                <div class="header__drop-menu-layout">
+                                    <h3 class="header__drop-menu-title">nam</h3>
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Đồng hồ KASHMIR</a>
+                                    </li>
+                                    <li class=" header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Đồng hồ WEIMAR</a>
+                                    </li>
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Đồng hồ COLOSSEUM</a>
+                                    </li>
+                                </div>
+                                
+                                <div class="header__drop-menu-layout">
+                                    <h3 class="header__drop-menu-title">nữ</h3>
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Bán chạy nhất</a>
+                                    </li>  
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Đồng hồ MELISSANI</a>
+                                    </li>                       
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Đồng hồ MORAINE</a>
+                                    </li>  
+                                </div>
+                                
+                                <div class="header__drop-menu-layout">
+                                    <h3 class="header__drop-menu-title">phụ kiện</h3>
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Dây đồng hồ</a>
+                                    </li>
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Kính râm</a>
+                                    </li>
+                                    <li class="header__drop-menu-item">
+                                        <a href="#" class="header__drop-menu-link">Kính mắt</a>
+                                    </li>
+                                </div>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            tin tức 
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            liên hệ 
+                        </a>
+                    </li>
+                    <li class="header__nav-item hide-on-pc">
+                        <a href="#" class="header__nav-link">
+                            Đăng nhâp 
+                        </a>
+                    </li>
+                    <li class="header__nav-item hide-on-pc">
+                        <a href="#" class="header__nav-link">
+                            Đăng ký
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- End: HEADER -->
+
+        <!-- Begin: BANNER -->
+        <div class="banner">
+            <img class="banner__img" src="./assets/img/banner.jpg" alt="banner"></img>
+        </div>
+        <!-- End: BANNER -->
+
+        <!-- Begin: CONTENT -->
+        <div class="grid container">
+            <div class="content">
+                <div class="content__header">
+                    <a href="#" class="content__title">Sản Phẩm <span class="content__title-bold">Mới</span></a>
+                    <ul class="content__list">
+                        <li class="content-item">
+                            <a href="#" class="content__link">Nam </a>
+                        </li>
+                        <li class="content-item">
+                            <a href="#" class="content__link">Nữ </a>
+                        </li>
+                        <li class="content-item">
+                            <a href="#" class="content__link">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- product new-->
+                <div class="product__list">
+                     <div class="row sm-container">
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series">carbon</h4>
+                                    <h3 class="product__cart-title">crux</h3>
+                                    <div class="product__cart-price">
+                                        <strong>4.800.000đ</strong>
+                                        <span>5.400.000đ</span>
+                                    </div>
+                                    <span class="product__saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">gunmetal rose</h3>
+                                    <div class="product__cart-price">
+                                        <strong>5.300.000đ</strong>
+                                        <span></span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">magnolia</h3>
+                                    <div class="product__cart-price">
+                                        <strong>4.100.000đ</strong>
+                                        <span>4.200.000đ</span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">black link</h3>
+                                    <div class="product__cart-price">
+                                        <strong>3.300.000đ</strong>
+                                        <span></span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- btn -->
+                <div class="btn">
+                    <a class="more-btn" href="#">
+                        <span>xem tất cả . sản phẩm mới</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="row">
+                    <div class="col lg-4 md-4 sm-12">
+                        <div class="section-accessories">
+                            <img src="./assets/img/banner-acces/ant_index_banner_1.jpg" class="section-accessories__img" alt="banner" >
+
+                            <div class="section-accessories__content">
+                                <h4 class="section-accessories__content-title">
+                                    Đồng hồ
+                                </h4>
+                                <a href="#" class="more-white-btn">Xem thêm</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col lg-4 md-4 sm-12">
+                        <div class="section-accessories">
+                            <img src="./assets/img/banner-acces/ant_index_banner_2.jpg" class="section-accessories__img" alt="banner" >
+
+                            <div class="section-accessories__content">
+                                <h4 class="section-accessories__content-title">
+                                    Mắt kính
+                                </h4>
+                                <a href="#" class="more-white-btn">Xem thêm</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col lg-4 md-4 sm-12">
+                        <div class="section-accessories">
+                            <img src="./assets/img/banner-acces/ant_index_banner_3.jpg" class="section-accessories__img" alt="banner" >
+
+                            <div class="section-accessories__content">
+                                <h4 class="section-accessories__content-title">
+                                    Trang sức
+                                </h4>
+                                <a href="#" class="more-white-btn">Xem thêm</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="content line-content">
+                <div class="content__header">
+                    <a href="#" class="content__title">Dành cho <span class="content__title-bold">Nam</span></a>
+                    <ul class="content__list">
+                        <li class="content-item">
+                            <a href="#" class="content__link">Nam </a>
+                        </li>
+                        <li class="content-item">
+                            <a href="#" class="content__link">Nữ </a>
+                        </li>
+                        <li class="content-item">
+                            <a href="#" class="content__link">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- product new-->
+                <div class="product__list">
+                     <div class="row sm-container">
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series">carbon</h4>
+                                    <h3 class="product__cart-title">crux</h3>
+                                    <div class="product__cart-price">
+                                        <strong>4.800.000đ</strong>
+                                        <span>5.400.000đ</span>
+                                    </div>
+                                    <span class="product__saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">gunmetal rose</h3>
+                                    <div class="product__cart-price">
+                                        <strong>5.300.000đ</strong>
+                                        <span></span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">magnolia</h3>
+                                    <div class="product__cart-price">
+                                        <strong>4.100.000đ</strong>
+                                        <span>4.200.000đ</span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">black link</h3>
+                                    <div class="product__cart-price">
+                                        <strong>3.300.000đ</strong>
+                                        <span></span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- btn -->
+                <div class="btn">
+                    <a class="more-btn" href="#">
+                        <span>xem tất cả . dành cho nam</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content__header">
+                    <a href="#" class="content__title">Dành Cho <span class="content__title-bold">Nữ</span></a>
+                    <ul class="content__list">
+                        <li class="content-item">
+                            <a href="#" class="content__link">Nam </a>
+                        </li>
+                        <li class="content-item">
+                            <a href="#" class="content__link">Nữ </a>
+                        </li>
+                        <li class="content-item">
+                            <a href="#" class="content__link">Phụ kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- product new-->
+                <div class="product__list">
+                     <div class="row sm-container">
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series">carbon</h4>
+                                    <h3 class="product__cart-title">crux</h3>
+                                    <div class="product__cart-price">
+                                        <strong>4.800.000đ</strong>
+                                        <span>5.400.000đ</span>
+                                    </div>
+                                    <span class="product__saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">gunmetal rose</h3>
+                                    <div class="product__cart-price">
+                                        <strong>5.300.000đ</strong>
+                                        <span></span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">magnolia</h3>
+                                    <div class="product__cart-price">
+                                        <strong>4.100.000đ</strong>
+                                        <span>4.200.000đ</span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col lg-3 md-4 sm-12">
+                            <a href="#" class="product__cart">
+                                <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                <div class="product__cart-info">
+                                    <h4 class="product-single__series"></h4>
+                                    <h3 class="product__cart-title">black link</h3>
+                                    <div class="product__cart-price">
+                                        <strong>3.300.000đ</strong>
+                                        <span></span>
+                                    </div>
+                                    <span class="product__saleOf product__no-saleOf">- 11%</span>
+                                    <div class="product__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- btn -->
+                <div class="btn">
+                    <a class="more-btn" href="#">
+                        <span>xem tất cả . dành cho nữ</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bg-collection-Product">
+            <div class="grid container">
+                <div class="content">
+                    <div class="content__header">
+                        <a href="#" class="content__title">Bộ sưu tập <span class="content__title-bold">Mùa hè</span></a>
+                    </div>
+                    <div class="row center-for-items">
+                        <div class="col lg-10 col-10-center">
+                            <div class="row">
+                                <div class="col lg-6 md-6 sm-6 col-6-cover banner-collection__circle">
+                                    <img class="banner-collection__img" src="./assets/img/collection/index-evo-icon-1.jpg" alt="">
+                                    <span class="banner-collection__circle-zoom"></span>
+                                </div>
+                                <div class="col lg-6 md-6 sm-6 col-6-cover">
+                                    <a href="#" class="product__cart">
+                                        <img class="product__cart-img" src="./assets/img/product/dong-ho-mvmt-crux-master.jpg" alt="crux1" >
+                                        <img class="product__cart-hoveImg" src="./assets/img/product/dong-ho-mvmt-crux-2-master.jpg" alt="crux2">
+                                        <div class="product__cart-info">
+                                            <h4 class="product-single__series">carbon</h4>
+                                            <h3 class="product__cart-title">crux</h3>
+                                            <div class="product__cart-price">
+                                                <strong>4.800.000đ</strong>
+                                                <span>5.400.000đ</span>
+                                            </div>
+                                            <span class="product__saleOf">- 11%</span>
+                                            <div class="product__add-cart">
+                                                Thêm vào giỏ hàng
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New watch -->
+        <div class="grid container">
+            <div class="content">
+                <div class="content__header">
+                    <a href="#" class="content__title">Tin tức <span class="content__title-bold">Evo watch</span></a>
+                </div>
+                <div class="row cart__list">
+                    <div class="col lg-3 md-6">
+                        <a href="#" class="cart">
+                            <div class="cart__image">
+                                <img src="./assets/img/evo-new/new1.jpg" alt="" class="cart__img">
+                            </div>
+                            <div class="cart__info">
+                                <h3 class="cart__title">
+                                    Mạnh Mẽ & Cuốn Hút với đồng hồ mặt rắn L'Duchen Silver Snake
+                                    Mạnh Mẽ & Cuốn Hút với đồng hồ mặt rắn L'Duchen Silver Snake
+                                    
+                                </h3>
+                                <p class="cart__content">
+                                    Thương hiệu đồng hồ Thụy Sỹ L’Duchen đã mở rộng bộ sưu tập 
+                                    Art Collection của mình với mẫu đồng hồ mặt r...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col lg-3 md-6">
+                        <a href="#" class="cart">
+                            <div class="cart__image">
+                                <img src="./assets/img/evo-new/new2.jpg" alt="" class="cart__img">
+                            </div>
+                            <div class="cart__info">
+                                <h3 class="cart__title">
+                                    Mạnh Mẽ & Cuốn Hút với đồng hồ mặt rắn L'Duchen Silver Snake
+                                </h3>
+                                <p class="cart__content">
+                                    Thương hiệu đồng hồ Thụy Sỹ L’Duchen đã mở rộng bộ sưu tập 
+                                    Art Collection của mình với mẫu đồng hồ mặt r...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col lg-3 md-6">
+                        <a href="#" class="cart">
+                            <div class="cart__image">
+                                <img src="./assets/img/evo-new/new3.jpg" alt="" class="cart__img">
+                            </div>
+                            <div class="cart__info">
+                                <h3 class="cart__title">
+                                    Mạnh Mẽ & Cuốn Hút với đồng hồ mặt rắn L'Duchen Silver Snake
+                                </h3>
+                                <p class="cart__content">
+                                    Thương hiệu đồng hồ Thụy Sỹ L’Duchen đã mở rộng bộ sưu tập 
+                                    Art Collection của mình với mẫu đồng hồ mặt r...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col lg-3 md-6">
+                        <a href="#" class="cart hiden-border">
+                            <div class="cart__image">
+                                <img src="./assets/img/evo-new/new4.jpeg" alt="" class="cart__img">
+                            </div>
+                            <div class="cart__info">
+                                <h3 class="cart__title">
+                                    Mạnh Mẽ & Cuốn Hút với đồng hồ mặt rắn L'Duchen Silver Snake
+                                </h3>
+                                <p class="cart__content">
+                                    Thương hiệu đồng hồ Thụy Sỹ L’Duchen đã mở rộng bộ sưu tập 
+                                    Art Collection của mình với mẫu đồng hồ mặt rolex xucala bánh tráng
+                                    trộn ngon toẹt vời
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- btn -->
+                <div class="btn">
+                    <a class="more-btn" href="#">
+                        xem tất cả
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End: CONTENT -->
+
+        <footer class="footer">
+            <div class="grid container">
+                <div class="row">
+                    <div class="col lg-3 md-6 sm-12">
+                        <ul class="ft__about-list ft-sm-pd">
+                            <li class="ft__about-item">
+                                <a href="#" class="ft__about-link about__img--center">
+                                    <img src="./assets/img/logo.png" alt="" class="ft__about-img">
+                                </a>
+                            </li>
+                            <li class="ft__about-item">
+                                <i class="ft__about-icon fas fa-map-marker-alt"></i>
+                                <span class="ft__about-adress">
+                                    30 Đường 2/9, Phường Bình Hiên, Quận Hải Châu, Đà Nẵng
+                                </span>
+                            </li>
+                            <li class="ft__about-item">
+                                <i class="ft__about-icon fas fa-phone-alt"></i>
+                                <a href="tel: 0123 456 789" class="ft__about-link">0123 456 789</a>
+                            </li>
+                            <li class="ft__about-item">
+                                <i class="ft__about-icon fas fa-envelope"></i>
+                                <a href="mal: evoteamthemes@gmail.com" class="ft__about-link">evoteamthemes@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col lg-3 md-6 sm-12">
+                        <div class="ft__widget ft-sm-pd">
+                            <h3 class="ft__widget-title">Mua hàng</h3>
+                            <ul class="ft__menu-list">
+                                <li class="ft__menu-item">
+                                    <a href="#" class="ft__menu-link">nam</a>
+                                </li>
+                                <li class="ft__menu-item">
+                                    <a href="#" class="ft__menu-link">nữ</a>
+                                </li>
+                                <li class="ft__menu-item">
+                                    <a href="#" class="ft__menu-link">phụ kiện</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col lg-3 md-6 sm-12">
+                        <div class="ft__widget ft-sm-pd">
+                            <h3 class="ft__widget-title">Dịch vụ khách hàng</h3>
+                            <ul class="ft__menu-list">
+                                <li class="ft__menu-item">
+                                    <a href="#" class="ft__menu-link">nam</a>
+                                </li>
+                                <li class="ft__menu-item">
+                                    <a href="#" class="ft__menu-link">nữ</a>
+                                </li>
+                                <li class="ft__menu-item">
+                                    <a href="#" class="ft__menu-link">phụ kiện</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col lg-3 md-6 sm-12">
+                        <div class="ft__registration ft-sm-pd">
+                            <h3 class="ft__registration-title">Đăng ký nhận tin</h3>
+                            <span class="ft__registration-desc">
+                                Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.
+                            </span>
+                            <div class="ft__registration-login">
+                                <input type="text" placeholder="Email của bạn" class="ft__registration-input">
+                                <div class="btn ft__registration-btn">
+                                    <a href="#" class="more-btn">Đăng ký</a>
+                                </div>
+                            </div>
+                            <ul class="ft__registration-list">
+                                <li class="ft__registration-item">
+                                    <img src="//bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_1.svg?1618495595751" alt="visa">
+                                </li>
+                                <li class="ft__registration-item">
+                                    <img src="//bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_2.svg?1618495595751" alt="visa">
+                                </li>
+                                <li class="ft__registration-item">
+                                    <img src="//bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_3.svg?1618495595751" alt="visa">
+                                </li>
+                                <li class="ft__registration-item">
+                                    <img src="//bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_4.svg?1618495595751" alt="visa">
+                                </li>
+                                <li class="ft__registration-item">
+                                    <img src="//bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_5.svg?1618495595751" alt="visa">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ft__license">
+                <p class="ft__license-text">
+                    © Bản quyền trang web CLONE thuộc về The Hiep
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./assets/main.js"></script>
+</html>
