@@ -1,0 +1,187 @@
+/* Mobile & Tablet (< 1023px) */
+@media (max-width: 63.9375em) {
+    .header .header__overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .header .navbar__mobile {
+        display: block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 100vh;
+        background-color: var(--white-color);
+        transform: translateX(-330px);
+        transition: 0.5s cubic-bezier(.7,0,.3,1);
+    }
+    .header .navbar.active {
+        transform: translateX(0);
+    }
+    .navbar__mobile {
+        width: 100%;
+    }
+    .header .navbar .navbar__close {
+        display: block;
+    }
+    .header .navbar__list {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        padding: 40px 20px;
+    }
+    .navbar__list .navbar__item {
+        width: 100%;
+    }
+    .header .navbar__list .navbar__item .navbar__link {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 12px 0;
+    }
+    .header .navbar__list .navbar__item:nth-child(2) .navbar__link {
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    .header .navbar__list .navbar__item:nth-child(2) .navbar__link::before {
+        top: 6px;
+        right: 226px;
+    }
+    .header .navbar__list .language {
+        padding: 12px 5px;
+    }
+    .header .navbar__list .language__icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+        right: 10px;
+    }
+    .header .navbar__list .language__block {
+        flex-direction: column;
+        width: 280px;
+    }
+    .header .navbar__list .language__block.active {
+        top: 60px;
+    }
+    .header .navbar__list .language__block-currencys ::after {
+        width: 0;
+    }
+    .header .search-block__box-input {
+        width: 260px;
+    }
+    .banner-slider .slick-dots {
+        bottom: 10px;
+        right: 30px;
+    }
+    .introduce .introduce__app .introduce__app-qrcode {
+        display: none;
+    }
+    .introduce .introduce__app .introduce__app-list {
+        justify-content: space-between;
+    }
+    .introduce .introduce__desc {
+        margin-bottom: 20px;
+    }
+    .footer .footer__app .qrcode {
+        display: none;
+    }
+    .footer-sub .footer-sub__wrapper p {
+        width: 100%;
+        text-align: center;
+    }
+    .main .back-to-top {
+        display: none;
+    }
+}
+/* Tablet (740px - 1023px) */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .banner-slider__item {
+        height: 200px;
+    }
+    .location .location__slider .location__item {
+        height: 370px;
+    }
+    .offer .offer__list .offer__item {
+        height: 230px;
+    }
+    .suggest .suggest__list .suggest__item .suggest__img,
+    .discover .discover__list .discover__item {
+        height: 280px;
+    }
+    .tutorial .tutorial__list .tutorial__item {
+        height: 250px;
+    }
+    .footer .footer__app .footer__app-list .footer__app-item a {
+        width: 180px;
+        height: 56px;
+    }
+}
+/* Mobile (< 739px) */
+@media (max-width: 46.1875em) {
+    .section {
+        padding-top: 40px;
+    }
+    .banner-slider__item {
+        height: 150px;
+    }
+    .header .search-block__box-date, .header .search-block__box-customer {
+        display: none;
+    }
+    .header .search-block__box {
+        flex: 1;
+    }
+    .header .search-block__box-input {
+        width: 100%;
+    }
+    .header .search-block .search-history h3 {
+        font-size: 18px;
+    }
+    .location.section {
+        padding-top: 20px;
+    }
+    .location .location__slider .location__item {
+        height: 340px;
+    }
+    .offer .offer__list .offer__item {
+        height: 250px;
+    }
+    .offer {
+        padding-bottom: 40px;
+        position: relative;
+    }
+    .offer .section__desc .offer__more-link {
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+    }
+    .offer .offer__list {
+        padding-bottom: 0;
+    }
+    .offer .offer__list .slick-dots  {
+        bottom: 10px;
+    }
+    .suggest {
+        padding-bottom: 20px;
+    }
+    .suggest .suggest__list .suggest__item .suggest__img,
+    .discover .discover__list .discover__item {
+        height: 260px;
+    }
+    .tutorial .tutorial__list .tutorial__item {
+        height: auto;
+    }
+    .introduce .introduce__logo {
+        width: 150px;
+    }
+    .introduce .introduce__title {
+        font-size: 20px;
+    }
+    .footer .certification__list .certification__item {
+        width: auto;
+        height: auto;
+    }
+}
